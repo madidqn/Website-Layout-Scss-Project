@@ -18,19 +18,67 @@ body {
 header {
   width: 100%;
   padding: 1.5rem 0;
-  background-color: aliceblue;
 }
-header .logo {
+header .wrapper {
+  display: flex;
+}
+header .wrapper .logo {
   display: flex;
   flex-direction: column;
+  width: 30%;
 }
-header .logo a {
+header .wrapper .logo a {
   font-size: 2rem;
   color: black;
   font-weight: bold;
 }
-header .logo span {
+header .wrapper .logo span {
   font-size: 11px;
   letter-spacing: 2px;
   font-weight: 800;
+}
+header .wrapper .contact {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+header .wrapper .contact > div:not(:last-child) {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+header .wrapper .contact > div:not(:last-child) i {
+  font-size: 1.4rem;
+  color: #fd5e00;
+}
+header .wrapper .contact > div:not(:last-child) span {
+  font-size: 17px;
+  font-weight: 800;
+  display: block;
+  padding-bottom: 5px;
+}
+header .wrapper .contact > div:not(:last-child) p {
+  color: #333;
+  font-size: 14px;
+}
+header .wrapper .contact > :last-child {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .wrapper .contact > :last-child button {
+  width: 110px;
+  height: 38px;
+  font-size: 1rem;
+  background-color: #fd5e00;
+  border: 1px solid #fd5e00;
+  outline: none;
+  color: aliceblue;
+  transition: all 0.6s;
+}
+header .wrapper .contact > :last-child button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.6s;
+  color: #fd5e00;
 }/*# sourceMappingURL=style.css.map */
