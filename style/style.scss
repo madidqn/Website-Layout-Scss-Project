@@ -18,12 +18,11 @@ body {
 }
 header {
   width: 100%;
-  padding: 1.5rem 0;
   //   background-color: $color-aliceblue;
 
   & .wrapper {
     display: flex;
-
+    padding: 1.5rem 0;
     & .logo {
       display: flex;
       flex-direction: column;
@@ -40,7 +39,7 @@ header {
         font-weight: 800;
       }
     }
-    & .contact {
+    & .connection {
       width: 70%;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -86,6 +85,62 @@ header {
             transition: all 0.6s;
             color: $color-first;
           }
+        }
+      }
+    }
+  }
+  & nav {
+    padding: 10px 1.5rem;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+
+    & > :first-child {
+      width: 70%;
+      display: flex;
+      column-gap: 2rem;
+      color: $color-aliceblue;
+      font-size: 1rem;
+
+      li {
+        a {
+          color: $color-aliceblue;
+        }
+      }
+      li:first-child a {
+        color: $color-first;
+      }
+    }
+
+    & > :last-child {
+      width: 30%;
+      display: flex;
+      justify-content: flex-end;
+
+      & > div {
+        width: 90%;
+        padding: 1.5rem 13px;
+        border: 1px solid rgba(225, 228, 230, 0.082);
+        border-radius: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+
+        input {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          height: 30px;
+          width: 80%;
+          font-size: 1.2rem;
+          color: $color-aliceblue;
+        }
+        i {
+          width: 20%;
+          display: flex;
+          font-size: 1.3rem;
+          color: rgba(219, 221, 223, 0.827);
+          justify-content: end;
         }
       }
     }

@@ -17,10 +17,10 @@ body {
 
 header {
   width: 100%;
-  padding: 1.5rem 0;
 }
 header .wrapper {
   display: flex;
+  padding: 1.5rem 0;
 }
 header .wrapper .logo {
   display: flex;
@@ -37,36 +37,36 @@ header .wrapper .logo span {
   letter-spacing: 2px;
   font-weight: 800;
 }
-header .wrapper .contact {
+header .wrapper .connection {
   width: 70%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-header .wrapper .contact > div:not(:last-child) {
+header .wrapper .connection > div:not(:last-child) {
   display: flex;
   align-items: center;
   column-gap: 12px;
 }
-header .wrapper .contact > div:not(:last-child) i {
+header .wrapper .connection > div:not(:last-child) i {
   font-size: 1.4rem;
   color: #fd5e00;
 }
-header .wrapper .contact > div:not(:last-child) span {
+header .wrapper .connection > div:not(:last-child) span {
   font-size: 17px;
   font-weight: 800;
   display: block;
   padding-bottom: 5px;
 }
-header .wrapper .contact > div:not(:last-child) p {
+header .wrapper .connection > div:not(:last-child) p {
   color: #333;
   font-size: 14px;
 }
-header .wrapper .contact > :last-child {
+header .wrapper .connection > :last-child {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-header .wrapper .contact > :last-child button {
+header .wrapper .connection > :last-child button {
   width: 110px;
   height: 38px;
   font-size: 1rem;
@@ -76,9 +76,58 @@ header .wrapper .contact > :last-child button {
   color: aliceblue;
   transition: all 0.6s;
 }
-header .wrapper .contact > :last-child button:hover {
+header .wrapper .connection > :last-child button:hover {
   cursor: pointer;
   background-color: transparent;
   transition: all 0.6s;
   color: #fd5e00;
+}
+header nav {
+  padding: 10px 1.5rem;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+}
+header nav > :first-child {
+  width: 70%;
+  display: flex;
+  column-gap: 2rem;
+  color: aliceblue;
+  font-size: 1rem;
+}
+header nav > :first-child li a {
+  color: aliceblue;
+}
+header nav > :first-child li:first-child a {
+  color: #fd5e00;
+}
+header nav > :last-child {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav > :last-child > div {
+  width: 90%;
+  padding: 1.5rem 13px;
+  border: 1px solid rgba(225, 228, 230, 0.082);
+  border-radius: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+header nav > :last-child > div input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 80%;
+  font-size: 1.2rem;
+  color: aliceblue;
+}
+header nav > :last-child > div i {
+  width: 20%;
+  display: flex;
+  font-size: 1.3rem;
+  color: rgba(219, 221, 223, 0.827);
+  justify-content: end;
 }/*# sourceMappingURL=style.css.map */
