@@ -18,7 +18,6 @@ body {
 }
 header {
   width: 100%;
-  //   background-color: $color-aliceblue;
 
   & .wrapper {
     display: flex;
@@ -145,4 +144,17 @@ header {
       }
     }
   }
+}
+main {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(233, 145, 105, 0.496) 0%
+    ),
+    url("/images/bg_1.jpg");
+  // background-position: ;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
