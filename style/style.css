@@ -13,6 +13,7 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
+  height: 100%;
 }
 
 header {
@@ -134,8 +135,51 @@ header nav > :last-child > div i {
 
 main {
   width: 100%;
-  height: 80vh;
+  height: 78vh;
+  padding: 8rem 0;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(233, 145, 105, 0.496) 0%), url("/images/bg_1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+main .main-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 1.2rem;
+}
+main .main-content h1 {
+  color: aliceblue;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+main .main-content h1 span {
+  display: block;
+}
+main .main-content p {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+  color: aliceblue;
+  word-spacing: 2px;
+}
+main .main-content button {
+  width: 110px;
+  height: 38px;
+  font-size: 1rem;
+  background-color: #fd5e00;
+  border: 1px solid #fd5e00;
+  outline: none;
+  color: aliceblue;
+  transition: all 0.6s;
+  width: 130px;
+  height: 50px;
+  border-radius: 30px;
+}
+main .main-content button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.6s;
+  color: #fd5e00;
 }/*# sourceMappingURL=style.css.map */
