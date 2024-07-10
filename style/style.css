@@ -182,4 +182,38 @@ main .main-content button:hover {
   background-color: transparent;
   transition: all 0.6s;
   color: #fd5e00;
+}
+
+.article-Education {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.article-Education > section {
+  padding: 3rem 2rem;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.article-Education > section > i {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+}
+.article-Education > section > h2 {
+  font-weight: 400;
+}
+.article-Education > section > p {
+  text-align: center;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 1.3rem;
+  font-size: 1rem;
+}
+.article-Education > section:nth-child(2n+1) {
+  background-color: #fd5e00;
+}
+.article-Education > section:nth-child(2n) {
+  background-color: #333;
 }/*# sourceMappingURL=style.css.map */

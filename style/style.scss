@@ -212,3 +212,38 @@ main {
     }
   }
 }
+.article-Education {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  > section {
+    padding: 3rem 2rem;
+    color: $color-aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1.5rem;
+
+    > i {
+      margin-bottom: 1rem;
+      font-size: 3.5rem;
+    }
+    > h2 {
+      font-weight: 400;
+    }
+    > p {
+      text-align: center;
+      word-spacing: 1px;
+      letter-spacing: 1px;
+      line-height: 1.3rem;
+      font-size: 1rem;
+    }
+  }
+  > section:nth-child(2n + 1) {
+    background-color: $color-first;
+  }
+  > section:nth-child(2n) {
+    background-color: #333;
+  }
+}
