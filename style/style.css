@@ -66,6 +66,7 @@ header .wrapper .connection > :last-child {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex-direction: row;
 }
 header .wrapper .connection > :last-child button {
   width: 110px;
@@ -127,9 +128,9 @@ header nav > :last-child > div input {
 }
 header nav > :last-child > div i {
   width: 20%;
-  display: flex;
   font-size: 1.3rem;
   color: rgba(219, 221, 223, 0.827);
+  display: flex;
   justify-content: end;
 }
 
@@ -142,12 +143,12 @@ main {
   background-size: cover;
 }
 main .main-content {
-  width: 50%;
-  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
   row-gap: 1.2rem;
 }
 main .main-content h1 {
@@ -189,13 +190,13 @@ main .main-content button:hover {
   grid-template-columns: repeat(4, 1fr);
 }
 .article-Education > section {
-  padding: 3rem 2rem;
-  color: aliceblue;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   row-gap: 1.5rem;
+  padding: 3rem 2rem;
+  color: aliceblue;
 }
 .article-Education > section > i {
   margin-bottom: 1rem;

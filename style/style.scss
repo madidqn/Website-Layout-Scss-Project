@@ -20,6 +20,12 @@ $color-dark: #333;
   transition: all 0.6s;
   color: $color-first;
 }
+@mixin display-flex($align, $justify, $direction: row) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
 * {
   margin: 0;
   padding: 0;
@@ -83,9 +89,7 @@ header {
         }
       }
       & > :last-child {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+        @include display-flex(center, flex-end);
 
         button {
           width: 110px;
@@ -155,9 +159,9 @@ header {
         }
         i {
           width: 20%;
-          display: flex;
           font-size: 1.3rem;
           color: rgba(219, 221, 223, 0.827);
+          display: flex;
           justify-content: end;
         }
       }
@@ -178,12 +182,10 @@ main {
   background-size: cover;
 
   .main-content {
+    @include display-flex(flex-start, center, column);
+    // flex-direction: column;
     width: 50%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     row-gap: 1.2rem;
 
     h1 {
@@ -218,13 +220,11 @@ main {
   grid-template-columns: repeat(4, 1fr);
 
   > section {
+    @include display-flex(center, center, column);
+    // flex-direction: column;
+    row-gap: 1.5rem;
     padding: 3rem 2rem;
     color: $color-aliceblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 1.5rem;
 
     > i {
       margin-bottom: 1rem;
