@@ -185,11 +185,11 @@ main .main-content button:hover {
   color: #fd5e00;
 }
 
-.article-Education {
+.section-Education {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-.article-Education > section {
+.section-Education > section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,23 +198,23 @@ main .main-content button:hover {
   padding: 3rem 2rem;
   color: aliceblue;
 }
-.article-Education > section > i {
+.section-Education > section > i {
   margin-bottom: 1rem;
   font-size: 3.5rem;
 }
-.article-Education > section > h2 {
+.section-Education > section > h2 {
   font-weight: 400;
 }
-.article-Education > section > p {
+.section-Education > section > p {
   text-align: center;
   word-spacing: 1px;
   letter-spacing: 1px;
   line-height: 1.3rem;
   font-size: 1rem;
 }
-.article-Education > section:nth-child(2n+1) {
+.section-Education > section:nth-child(2n+1) {
   background-color: #fd5e00;
 }
-.article-Education > section:nth-child(2n) {
+.section-Education > section:nth-child(2n) {
   background-color: #333;
 }/*# sourceMappingURL=style.css.map */
