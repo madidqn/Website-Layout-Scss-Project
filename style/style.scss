@@ -26,6 +26,14 @@ $color-dark: #333;
   justify-content: $justify;
   flex-direction: $direction;
 }
+@mixin display-grid($number, $size) {
+  display: grid;
+  grid-template-columns: repeat($number, #{$size}fr);
+}
+@mixin background-repeat-size() {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 * {
   margin: 0;
   padding: 0;
@@ -64,9 +72,8 @@ header {
       }
     }
     & .connection {
+      @include display-grid(3, 1);
       width: 70%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
 
       & > div:not(:last-child) {
         display: flex;
@@ -168,8 +175,9 @@ main {
       rgba(233, 145, 105, 0.496) 0%
     ),
     url("/images/bg_1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include background-repeat-size();
+  // background-repeat: no-repeat;
+  // background-size: cover;
 
   .main-content {
     @include display-flex(flex-start, center, column);
@@ -205,8 +213,7 @@ main {
   }
 }
 .section-education {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  @include display-grid(4, 1);
 
   > section {
     @include display-flex(center, center, column);
@@ -262,8 +269,7 @@ main {
         letter-spacing: 1px;
       }
       > section {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        @include display-grid(2, 1);
         row-gap: 1.5rem;
         column-gap: 1.5rem;
 
@@ -296,9 +302,8 @@ main {
     }
     > :last-child {
       background-image: url("./../images/about.jpg");
+      @include background-repeat-size();
       background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
     }
   }
 }
@@ -312,8 +317,7 @@ main {
       rgba(227, 99, 39, 0.604) 0%
     ),
     url(./../images/bg_3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include background-repeat-size();
   background-attachment: fixed;
 
   > div {
@@ -321,15 +325,13 @@ main {
     padding: 2rem 0;
 
     > :first-child {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      @include display-grid(2, 1);
       column-gap: 2rem;
       padding-bottom: 3.5rem;
 
       .video-university {
         background-image: url("./../images/about.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include background-repeat-size();
       }
       .fox-university {
         padding: 2rem 0;
@@ -351,8 +353,7 @@ main {
     }
     > :last-child {
       padding: 2rem 0;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      @include display-grid(4, 1);
       column-gap: 3rem;
 
       > div {

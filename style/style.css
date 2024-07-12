@@ -39,9 +39,9 @@ header .wrapper .logo span {
   font-weight: 800;
 }
 header .wrapper .connection {
-  width: 70%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  width: 70%;
 }
 header .wrapper .connection > div:not(:last-child) {
   display: flex;
@@ -273,9 +273,9 @@ main .main-content button:hover {
 }
 .article-offer > div > :last-child {
   background-image: url("./../images/about.jpg");
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .article-univesity {
