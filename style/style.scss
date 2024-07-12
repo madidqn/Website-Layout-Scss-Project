@@ -237,8 +237,6 @@ main {
   }
 }
 .article-offer {
-  height: 110vh;
-
   > div {
     width: 80%;
     margin: 0 auto;
@@ -301,6 +299,59 @@ main {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+    }
+  }
+}
+.article-univesity {
+  @include display-flex(center, center);
+  height: 110vh;
+  width: 100%;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(227, 99, 39, 0.604) 0%
+    ),
+    url(./../images/bg_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  > div {
+    width: 80%;
+    padding: 2rem 0;
+
+    > :first-child {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+      padding-bottom: 2rem;
+
+      .video-university {
+        background-image: url("./../images/about.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .fox-university {
+        padding: 2rem 0;
+        color: $color-aliceblue;
+        > h2 {
+          font-size: 2.5rem;
+          padding-bottom: 2rem;
+          font-weight: 500;
+        }
+        > p {
+          line-height: 1.7rem;
+          word-spacing: 2px;
+          letter-spacing: 1px;
+        }
+        > .uni-paragraph {
+          padding-bottom: 2rem;
+        }
+      }
+    }
+    > :last-child {
+      height: 200px;
+      background-color: rebeccapurple;
     }
   }
 }
