@@ -324,7 +324,7 @@ main {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 2rem;
-      padding-bottom: 2rem;
+      padding-bottom: 3.5rem;
 
       .video-university {
         background-image: url("./../images/about.jpg");
@@ -350,8 +350,21 @@ main {
       }
     }
     > :last-child {
-      height: 200px;
-      background-color: rebeccapurple;
+      padding: 2rem 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 3rem;
+
+      > div {
+        @include display-flex(center, center, column);
+        row-gap: 1rem;
+        color: $color-aliceblue;
+
+        > h4 {
+          font-size: 2.7rem;
+          font-weight: 600;
+        }
+      }
     }
   }
 }
