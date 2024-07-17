@@ -243,64 +243,64 @@ main {
       background-color: $color-dark; //for class
     }
   }
-}
-.article-offer {
-  > div {
-    width: 80%;
-    margin: 0 auto;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 65% 35%;
+  .article-offer {
+    > div {
+      width: 80%;
+      margin: 0 auto;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 65% 35%;
 
-    > :first-child {
-      padding: 4rem 0;
-      padding-right: 1rem;
+      > :first-child {
+        padding: 4rem 0;
+        padding-right: 1rem;
 
-      > h2 {
-        @include h-style(_, 2.3, 500);
-        padding-bottom: 3rem;
-      }
-      > p {
-        padding-bottom: 2.5rem;
-        line-height: 1.6rem;
-        font-size: 1rem;
-        word-spacing: 2px;
-        letter-spacing: 1px;
-      }
-      > section {
-        @include display-grid(2, 1);
-        row-gap: 1.5rem;
-        column-gap: 1.5rem;
-
+        > h2 {
+          @include h-style(_, 2.3, 500);
+          padding-bottom: 3rem;
+        }
+        > p {
+          padding-bottom: 2.5rem;
+          line-height: 1.6rem;
+          font-size: 1rem;
+          word-spacing: 2px;
+          letter-spacing: 1px;
+        }
         > section {
-          padding-top: 2rem;
-          display: flex;
-          column-gap: 1rem;
+          @include display-grid(2, 1);
+          row-gap: 1.5rem;
+          column-gap: 1.5rem;
 
-          > div i {
-            @include h-style($color-aliceblue, 2.3, _);
-            background-color: $color-first;
-            padding: 1.5rem;
-            border-radius: 50%;
-          }
-          > :last-child {
-            > h3 {
-              @include h-style(_, 1.5, 500);
-              padding-bottom: 1rem;
+          > section {
+            padding-top: 2rem;
+            display: flex;
+            column-gap: 1rem;
+
+            > div i {
+              @include h-style($color-aliceblue, 2.3, _);
+              background-color: $color-first;
+              padding: 1.5rem;
+              border-radius: 50%;
             }
-            > p {
-              line-height: 1.7rem;
-              word-spacing: 2px;
-              letter-spacing: 1px;
+            > :last-child {
+              > h3 {
+                @include h-style(_, 1.5, 500);
+                padding-bottom: 1rem;
+              }
+              > p {
+                line-height: 1.7rem;
+                word-spacing: 2px;
+                letter-spacing: 1px;
+              }
             }
           }
         }
       }
-    }
-    > :last-child {
-      background-image: url("./../images/about.jpg");
-      @include background-repeat-size();
-      background-position: center;
+      > :last-child {
+        background-image: url("./../images/about.jpg");
+        @include background-repeat-size();
+        background-position: center;
+      }
     }
   }
 }
