@@ -39,6 +39,8 @@ $color-dark: #333;
   font-size: #{$font-size}rem;
   font-weight: $font-w;
 }
+@mixin p-style() {
+}
 * {
   margin: 0;
   padding: 0;
