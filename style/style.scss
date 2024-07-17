@@ -303,62 +303,62 @@ main {
       }
     }
   }
-}
-.article-univesity {
-  @include display-flex(center, center);
-  height: 110vh;
-  width: 100%;
-  background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(227, 99, 39, 0.604) 0%
-    ),
-    url(./../images/bg_3.jpg);
-  @include background-repeat-size();
-  background-attachment: fixed;
+  .article-univesity {
+    @include display-flex(center, center);
+    height: 110vh;
+    width: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(227, 99, 39, 0.604) 0%
+      ),
+      url(./../images/bg_3.jpg);
+    @include background-repeat-size();
+    background-attachment: fixed;
 
-  > div {
-    width: 80%;
-    padding: 2rem 0;
-
-    > :first-child {
-      @include display-grid(2, 1);
-      column-gap: 2rem;
-      padding-bottom: 3.5rem;
-
-      .video-university {
-        background-image: url("./../images/about.jpg");
-        @include background-repeat-size();
-      }
-      .fox-university {
-        padding: 2rem 0;
-        color: $color-aliceblue;
-        > h2 {
-          @include h-style(_, 2.5, 500);
-          padding-bottom: 2rem;
-        }
-        > p {
-          line-height: 1.7rem;
-          word-spacing: 2px;
-          letter-spacing: 1px;
-        }
-        > .uni-paragraph {
-          padding-bottom: 2rem;
-        }
-      }
-    }
-    > :last-child {
+    > div {
+      width: 80%;
       padding: 2rem 0;
-      @include display-grid(4, 1);
-      column-gap: 3rem;
 
-      > div {
-        @include display-flex(center, center, column);
-        row-gap: 1rem;
-        color: $color-aliceblue;
+      > :first-child {
+        @include display-grid(2, 1);
+        column-gap: 2rem;
+        padding-bottom: 3.5rem;
 
-        > h4 {
-          @include h-style(_, 2.7, 600);
+        .video-university {
+          background-image: url("./../images/about.jpg");
+          @include background-repeat-size();
+        }
+        .fox-university {
+          padding: 2rem 0;
+          color: $color-aliceblue;
+          > h2 {
+            @include h-style(_, 2.5, 500);
+            padding-bottom: 2rem;
+          }
+          > p {
+            line-height: 1.7rem;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+          }
+          > .uni-paragraph {
+            padding-bottom: 2rem;
+          }
+        }
+      }
+      > :last-child {
+        padding: 2rem 0;
+        @include display-grid(4, 1);
+        column-gap: 3rem;
+
+        > div {
+          @include display-flex(center, center, column);
+          row-gap: 1rem;
+          color: $color-aliceblue;
+
+          > h4 {
+            @include h-style(_, 2.7, 600);
+          }
         }
       }
     }
