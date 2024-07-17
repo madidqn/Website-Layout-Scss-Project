@@ -136,7 +136,7 @@ header nav > :last-child > div i {
   justify-content: end;
 }
 
-main {
+main .article-cantact {
   width: 100%;
   height: 78vh;
   padding: 8rem 0;
@@ -144,30 +144,27 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .main-content {
+main .article-cantact .cantact {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
   flex-direction: column;
-  width: 50%;
   height: 100%;
   row-gap: 1.2rem;
 }
-main .main-content h1 {
+main .article-cantact .cantact > h1 {
   color: aliceblue;
   font-size: 3.2rem;
   font-weight: 700;
 }
-main .main-content h1 span {
+main .article-cantact .cantact > h1 > span {
   display: block;
 }
-main .main-content p {
+main .article-cantact .cantact > p {
   font-size: 1.1rem;
   line-height: 1.8rem;
   color: aliceblue;
   word-spacing: 2px;
 }
-main .main-content button {
+main .article-cantact .cantact > button {
   width: 110px;
   height: 38px;
   font-size: 1rem;
@@ -180,18 +177,17 @@ main .main-content button {
   height: 50px;
   border-radius: 30px;
 }
-main .main-content button:hover {
+main .article-cantact .cantact > button:hover {
   cursor: pointer;
   background-color: transparent;
   transition: all 0.6s;
   color: #fd5e00;
 }
-
-.section-education {
+main .section-education {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-.section-education > section {
+main .section-education > section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,24 +196,24 @@ main .main-content button:hover {
   padding: 3rem 2rem;
   color: aliceblue;
 }
-.section-education > section > i {
+main .section-education > section > i {
   margin-bottom: 1rem;
   font-size: 3.5rem;
 }
-.section-education > section > h2 {
+main .section-education > section > h2 {
   font-weight: 400;
 }
-.section-education > section > p {
+main .section-education > section > p {
   text-align: center;
   word-spacing: 1px;
   letter-spacing: 1px;
   line-height: 1.3rem;
   font-size: 1rem;
 }
-.section-education > section:nth-child(2n+1) {
+main .section-education > section:nth-child(2n+1) {
   background-color: #fd5e00;
 }
-.section-education > section:nth-child(2n) {
+main .section-education > section:nth-child(2n) {
   background-color: #333;
 }
 
