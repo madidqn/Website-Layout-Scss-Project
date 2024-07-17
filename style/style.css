@@ -341,11 +341,10 @@ main .article-university > div > :last-child > div > h4 {
   font-weight: 600;
 }
 main .article-courses {
-  height: 150vh;
+  height: 140vh;
 }
 main .article-courses > div:first-child {
-  background-color: #fd5e00;
-  height: 40vh;
+  height: 45vh;
   width: 70%;
   margin: 0 auto;
   display: flex;
@@ -362,4 +361,59 @@ main .article-courses > div:first-child > p {
   word-spacing: 2px;
   letter-spacing: 1px;
   text-align: center;
+}
+main .article-courses > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  column-gap: 1.5rem;
+}
+main .article-courses > div:last-child > section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.2rem;
+}
+main .article-courses > div:last-child > section > img {
+  width: 100%;
+  height: 300px;
+}
+main .article-courses > div:last-child > section > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.3rem;
+}
+main .article-courses > div:last-child > section > div > span {
+  font-size: 13px;
+}
+main .article-courses > div:last-child > section > div > span i {
+  font-size: 17px;
+  color: #fd5e00;
+}
+main .article-courses > div:last-child > section > h3 {
+  color: _;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+main .article-courses > div:last-child > section > p {
+  line-height: 1.7rem;
+  word-spacing: 1px;
+  text-align: justify;
+}
+main .article-courses > div:last-child > section > button {
+  width: 110px;
+  height: 38px;
+  font-size: 1rem;
+  background-color: #fd5e00;
+  border: 1px solid #fd5e00;
+  outline: none;
+  color: aliceblue;
+  transition: all 0.6s;
+  border-radius: 30px;
+}
+main .article-courses > div:last-child > section > button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.6s;
+  color: #fd5e00;
 }/*# sourceMappingURL=style.css.map */

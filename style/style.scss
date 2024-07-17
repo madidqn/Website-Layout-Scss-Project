@@ -364,11 +364,10 @@ main {
     }
   }
   .article-courses {
-    height: 150vh;
+    height: 140vh;
 
     > div:first-child {
-      background-color: #fd5e00;
-      height: 40vh;
+      height: 45vh;
       width: 70%;
       margin: 0 auto;
       display: flex;
@@ -385,6 +384,53 @@ main {
         word-spacing: 2px;
         letter-spacing: 1px;
         text-align: center;
+      }
+    }
+    > div:last-child {
+      @include display-grid(4, 1);
+      padding: 0 1.5rem;
+      margin: 0 auto;
+      column-gap: 1.5rem;
+
+      > section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.2rem;
+
+        > img {
+          width: 100%;
+          height: 300px;
+        }
+        > div {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          column-gap: 1.3rem;
+
+          > span {
+            font-size: 13px;
+
+            i {
+              font-size: 17px;
+              color: $color-first;
+            }
+          }
+        }
+        > h3 {
+          @include h-style(_, 1.6, 500);
+        }
+        > p {
+          line-height: 1.7rem;
+          word-spacing: 1px;
+          text-align: justify;
+        }
+        > button {
+          @include button();
+          border-radius: 30px;
+
+          &:hover {
+            @include button-hover();
+          }
+        }
       }
     }
   }
