@@ -339,4 +339,27 @@ main .article-university > div > :last-child > div > h4 {
   color: _;
   font-size: 2.7rem;
   font-weight: 600;
+}
+main .article-courses {
+  height: 150vh;
+}
+main .article-courses > div:first-child {
+  background-color: #fd5e00;
+  height: 40vh;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 2.4rem;
+}
+main .article-courses > div:first-child > h2 {
+  font-size: 2.7rem;
+}
+main .article-courses > div:first-child > p {
+  line-height: 1.7rem;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
