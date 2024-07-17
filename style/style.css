@@ -276,7 +276,7 @@ main .article-offer > div > :last-child {
   background-size: cover;
   background-position: center;
 }
-main .article-univesity {
+main .article-university {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -288,46 +288,46 @@ main .article-univesity {
   background-size: cover;
   background-attachment: fixed;
 }
-main .article-univesity > div {
+main .article-university > div {
   width: 80%;
   padding: 2rem 0;
 }
-main .article-univesity > div > :first-child {
+main .article-university > div > :first-child {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
   padding-bottom: 3.5rem;
 }
-main .article-univesity > div > :first-child .video-university {
+main .article-university > div > :first-child .video-university {
   background-image: url("./../images/about.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .article-univesity > div > :first-child .fox-university {
+main .article-university > div > :first-child .fox-university {
   padding: 2rem 0;
   color: aliceblue;
 }
-main .article-univesity > div > :first-child .fox-university > h2 {
+main .article-university > div > :first-child .fox-university > h2 {
   color: _;
   font-size: 2.5rem;
   font-weight: 500;
   padding-bottom: 2rem;
 }
-main .article-univesity > div > :first-child .fox-university > p {
+main .article-university > div > :first-child .fox-university > p {
   line-height: 1.7rem;
   word-spacing: 2px;
   letter-spacing: 1px;
 }
-main .article-univesity > div > :first-child .fox-university > .uni-paragraph {
+main .article-university > div > :first-child .fox-university > .uni-paragraph {
   padding-bottom: 2rem;
 }
-main .article-univesity > div > :last-child {
+main .article-university > div > :last-child {
   padding: 2rem 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 3rem;
 }
-main .article-univesity > div > :last-child > div {
+main .article-university > div > :last-child > div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,7 +335,7 @@ main .article-univesity > div > :last-child > div {
   row-gap: 1rem;
   color: aliceblue;
 }
-main .article-univesity > div > :last-child > div > h4 {
+main .article-university > div > :last-child > div > h4 {
   color: _;
   font-size: 2.7rem;
   font-weight: 600;
