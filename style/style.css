@@ -193,7 +193,7 @@ main .section-education > section {
   justify-content: center;
   flex-direction: column;
   row-gap: 1.5rem;
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   color: aliceblue;
 }
 main .section-education > section > i {

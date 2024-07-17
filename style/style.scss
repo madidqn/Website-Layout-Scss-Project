@@ -218,7 +218,7 @@ main {
     > section {
       @include display-flex(center, center, column);
       row-gap: 1.5rem;
-      padding: 3rem 2rem;
+      padding: 4rem 2rem;
       color: $color-aliceblue;
 
       > i {
