@@ -363,7 +363,7 @@ main {
       }
     }
   }
-  .article-courses {
+  .article {
     height: 140vh;
 
     > div:first-child {
@@ -435,5 +435,8 @@ main {
         }
       }
     }
+  }
+  .article-teachers {
+    background-color: #fafafa;
   }
 }
