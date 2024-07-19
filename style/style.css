@@ -341,7 +341,7 @@ main .article-university > div > :last-child > div > h4 {
   font-weight: 600;
 }
 main .article {
-  height: 140vh;
+  height: 145vh;
 }
 main .article > div:first-child {
   height: 45vh;
@@ -378,15 +378,15 @@ main .article > div:last-child > section > img {
   width: 100%;
   height: 300px;
 }
-main .article > div:last-child > section > div {
+main .article > div:last-child > section > .course-time {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1.3rem;
 }
-main .article > div:last-child > section > div > span {
+main .article > div:last-child > section > .course-time > span {
   font-size: 13px;
 }
-main .article > div:last-child > section > div > span i {
+main .article > div:last-child > section > .course-time > span > i {
   font-size: 17px;
   color: #fd5e00;
 }
@@ -419,4 +419,44 @@ main .article > div:last-child > section > button:hover {
 }
 main .article-teachers {
   background-color: #fafafa;
+}
+main .article-teachers > div:last-child > section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 15px;
+}
+main .article-teachers > div:last-child > section .teacher-image {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+main .article-teachers > div:last-child > section .teacher-image > img {
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease all;
+  object-fit: cover;
+}
+main .article-teachers > div:last-child > section > h3 {
+  font-weight: 600;
+  font-size: 1.3;
+  transition: all 0.4s;
+}
+main .article-teachers > div:last-child > section > span {
+  font-size: 12px;
+  color: #fd5e00;
+  letter-spacing: 1px;
+}
+main .article-teachers > div:last-child > section > p {
+  text-align: center;
+  line-height: 1.7rem;
+}
+main .article-teachers > div:last-child > section:hover > h3 {
+  color: #fd5e00;
+  transition: all 0.4s;
+}
+main .article-teachers > div:last-child > section:hover > div > img {
+  transform: scale(1.1);
+  transition: 0.5s ease all;
 }/*# sourceMappingURL=style.css.map */
