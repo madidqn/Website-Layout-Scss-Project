@@ -459,6 +459,15 @@ main .article-teachers > div:last-child > section .teacher-image > .teacher-icon
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+  display: none;
+  align-items: center;
+  column-gap: 12px;
+  transition: 0.5s ease all;
+}
+main .article-teachers > div:last-child > section .teacher-image > .teacher-icons > i {
+  font-size: 1.2rem;
+  color: #fd5e00;
+  cursor: pointer;
 }
 main .article-teachers > div:last-child > section > h3 {
   font-weight: 600;
@@ -480,5 +489,9 @@ main .article-teachers > div:last-child > section:hover > h3 {
 }
 main .article-teachers > div:last-child > section:hover > .teacher-image > div:first-child {
   transform: scale(1.1);
+  transition: 0.5s ease all;
+}
+main .article-teachers > div:last-child > section:hover > .teacher-image > .teacher-icons {
+  display: flex;
   transition: 0.5s ease all;
 }/*# sourceMappingURL=style.css.map */

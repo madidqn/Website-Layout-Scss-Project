@@ -479,6 +479,16 @@ main {
             left: 50%;
             transform: translateX(-50%);
             z-index: 2;
+            display: none;
+            align-items: center;
+            column-gap: 12px;
+            transition: 0.5s ease all;
+
+            > i {
+              font-size: 1.2rem;
+              color: $color-first;
+              cursor: pointer;
+            }
           }
         }
         > h3 {
@@ -502,6 +512,10 @@ main {
         }
         &:hover > .teacher-image > div:first-child {
           transform: scale(1.1);
+          transition: 0.5s ease all;
+        }
+        &:hover > .teacher-image > .teacher-icons {
+          display: flex;
           transition: 0.5s ease all;
         }
       }
