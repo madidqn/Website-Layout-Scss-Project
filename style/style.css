@@ -428,15 +428,37 @@ main .article-teachers > div:last-child > section {
   row-gap: 15px;
 }
 main .article-teachers > div:last-child > section .teacher-image {
-  width: 100%;
-  max-width: 100%;
+  width: 350px;
+  height: 372px;
   overflow: hidden;
+  position: relative;
 }
-main .article-teachers > div:last-child > section .teacher-image > img {
+main .article-teachers > div:last-child > section .teacher-image > div:first-child {
+  height: 100%;
   width: 100%;
-  height: auto;
   transition: 0.5s ease all;
-  object-fit: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .article-teachers > div:last-child > section .teacher-image .teacher-one {
+  background-image: url("./../images/teacher-1.jpg");
+}
+main .article-teachers > div:last-child > section .teacher-image .teacher-two {
+  background-image: url("./../images/teacher-2.jpg");
+}
+main .article-teachers > div:last-child > section .teacher-image .teacher-three {
+  background-image: url("./../images/teacher-3.jpg");
+}
+main .article-teachers > div:last-child > section .teacher-image .teacher-four {
+  background-image: url("./../images/teacher-4.jpg");
+}
+main .article-teachers > div:last-child > section .teacher-image > .teacher-icons {
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 main .article-teachers > div:last-child > section > h3 {
   font-weight: 600;
@@ -456,7 +478,7 @@ main .article-teachers > div:last-child > section:hover > h3 {
   color: #fd5e00;
   transition: all 0.4s;
 }
-main .article-teachers > div:last-child > section:hover > div > img {
+main .article-teachers > div:last-child > section:hover > .teacher-image > div:first-child {
   transform: scale(1.1);
   transition: 0.5s ease all;
 }/*# sourceMappingURL=style.css.map */
