@@ -243,8 +243,7 @@ main .article-offer > div > :first-child > p {
 main .article-offer > div > :first-child > section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 1.5rem;
-  column-gap: 1.5rem;
+  gap: 1.5rem;
 }
 main .article-offer > div > :first-child > section > section {
   padding-top: 2rem;

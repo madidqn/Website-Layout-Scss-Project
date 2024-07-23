@@ -77,7 +77,9 @@ header {
       }
     }
     & .connection {
-      @include display-grid(3, 1);
+      // @include display-grid(3, 1);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       width: 70%;
 
       & > div:not(:last-child) {
@@ -213,7 +215,9 @@ main {
     }
   }
   .section-education {
-    @include display-grid(4, 1);
+    // @include display-grid(4, 1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
     > section {
       @include display-flex(center, center, column);
@@ -267,9 +271,10 @@ main {
           letter-spacing: 1px;
         }
         > section {
-          @include display-grid(2, 1);
-          row-gap: 1.5rem;
-          column-gap: 1.5rem;
+          // @include display-grid(2, 1);
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.5rem;
 
           > section {
             padding-top: 2rem;
@@ -321,7 +326,9 @@ main {
       padding: 2rem 0;
 
       > :first-child {
-        @include display-grid(2, 1);
+        // @include display-grid(2, 1);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
         padding-bottom: 3.5rem;
 
@@ -348,7 +355,9 @@ main {
       }
       > :last-child {
         padding: 2rem 0;
-        @include display-grid(4, 1);
+        // @include display-grid(4, 1);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         column-gap: 3rem;
 
         > div {
