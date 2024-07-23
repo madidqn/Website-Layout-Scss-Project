@@ -51,7 +51,6 @@ header .wrapper .connection > div:not(:last-child) {
 header .wrapper .connection > div:not(:last-child) i {
   color: #fd5e00;
   font-size: 1.4rem;
-  font-weight: _;
 }
 header .wrapper .connection > div:not(:last-child) span {
   font-size: 17px;
@@ -130,7 +129,6 @@ header nav > :last-child > div i {
   width: 20%;
   color: rgba(219, 221, 223, 0.827);
   font-size: 1.3rem;
-  font-weight: _;
   display: flex;
   justify-content: end;
 }
@@ -227,7 +225,6 @@ main .article-offer > div > :first-child {
   padding-right: 1rem;
 }
 main .article-offer > div > :first-child > h2 {
-  color: _;
   font-size: 2.3rem;
   font-weight: 500;
   padding-bottom: 3rem;
@@ -252,13 +249,11 @@ main .article-offer > div > :first-child > section > section {
 main .article-offer > div > :first-child > section > section > div i {
   color: aliceblue;
   font-size: 2.3rem;
-  font-weight: _;
   background-color: #fd5e00;
   padding: 1.5rem;
   border-radius: 50%;
 }
 main .article-offer > div > :first-child > section > section > :last-child > h3 {
-  color: _;
   font-size: 1.5rem;
   font-weight: 500;
   padding-bottom: 1rem;
@@ -305,7 +300,6 @@ main .article-university > div > :first-child .fox-university {
   color: aliceblue;
 }
 main .article-university > div > :first-child .fox-university > h2 {
-  color: _;
   font-size: 2.5rem;
   font-weight: 500;
   padding-bottom: 2rem;
@@ -333,7 +327,6 @@ main .article-university > div > :last-child > div {
   color: aliceblue;
 }
 main .article-university > div > :last-child > div > h4 {
-  color: _;
   font-size: 2.7rem;
   font-weight: 600;
 }
@@ -388,7 +381,6 @@ main .article > div:last-child > section > .course-time > span > i {
   color: #fd5e00;
 }
 main .article > div:last-child > section > h3 {
-  color: _;
   font-size: 1.6rem;
   font-weight: 500;
 }
