@@ -144,7 +144,6 @@ main .article-cantact {
 main .article-cantact .cantact {
   display: flex;
   flex-direction: column;
-  height: 100%;
   row-gap: 1.2rem;
 }
 main .article-cantact .cantact > h1 {
@@ -214,9 +213,6 @@ main .section-education > section:nth-child(2n) {
   background-color: #333;
 }
 main .article-offer > div {
-  width: 80%;
-  margin: 0 auto;
-  height: 100%;
   display: grid;
   grid-template-columns: 65% 35%;
 }
@@ -494,9 +490,6 @@ footer > div {
   grid-template-columns: repeat(4, 1fr);
   column-gap: 3rem;
   color: aliceblue;
-  width: 80%;
-  margin: 0 auto;
-  height: 100%;
 }
 footer > div > section > h3 {
   font-size: 1.4rem;
