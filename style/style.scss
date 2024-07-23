@@ -375,10 +375,6 @@ main {
       height: 45vh;
       width: 70%;
       margin: 0 auto;
-      // display: flex;
-      // align-items: center;
-      // flex-direction: column;
-      // justify-content: center;
       row-gap: 2.4rem;
 
       > h2 {
@@ -446,10 +442,6 @@ main {
     > div:last-child {
       > section {
         @include display-flex(center, center, column);
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        // flex-direction: column;
         row-gap: 15px;
 
         .teacher-image {
