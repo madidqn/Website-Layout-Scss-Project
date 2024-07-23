@@ -299,7 +299,7 @@ main .article-university > div > :first-child {
   padding-bottom: 3.5rem;
 }
 main .article-university > div > :first-child .video-university {
-  background-image: url("./../images/about.jpg");
+  background-image: url("./../images/about-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
