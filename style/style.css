@@ -532,10 +532,10 @@ footer > div .questions > div > i {
 footer > div .questions > div > span {
   font-size: 15px;
 }
-footer > div .questions .dd > span {
+footer > div .questions .questions-map > span {
   color: #bab7b7;
 }
-footer > div .questions > div:not(.dd) {
+footer > div .questions > div:not(.questions-map) {
   cursor: pointer;
 }
 footer > div .recent-blog {
