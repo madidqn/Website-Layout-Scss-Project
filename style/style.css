@@ -497,7 +497,7 @@ main .article-teachers > div:last-child > section:hover > .teacher-image > .teac
 }
 
 footer {
-  height: 110vh;
+  height: 70vh;
   background-color: #333;
   padding: 5rem 0;
 }
@@ -513,6 +513,7 @@ footer > div {
 footer > div > section > h3 {
   font-size: 1.4rem;
   font-weight: 500;
+  padding-bottom: 2rem;
 }
 footer > div .questions {
   display: flex;
@@ -537,4 +538,37 @@ footer > div .questions .dd > span {
 }
 footer > div .questions > div:not(.dd) {
   cursor: pointer;
+}
+footer > div .recent-blog {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+footer > div .recent-blog > div {
+  display: flex;
+  column-gap: 1.5rem;
+}
+footer > div .recent-blog > div > img {
+  width: 100px;
+  height: 100px;
+}
+footer > div .recent-blog > div > p {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  padding-bottom: 1.5rem;
+}
+footer > div .recent-blog > div > p > span:first-child {
+  line-height: 1.5rem;
+  transition: all 0.4s ease;
+}
+footer > div .recent-blog > div > p > span:first-child:hover {
+  color: #fd5e00;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+footer > div .recent-blog > div > p > span:not(:first-child) {
+  display: block;
+  font-size: 11px;
+  color: #bab7b7;
 }/*# sourceMappingURL=style.css.map */
