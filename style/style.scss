@@ -28,14 +28,14 @@ $color-gray: #bab7b7;
   justify-content: $justify;
   flex-direction: $direction;
 }
-@mixin display-grid($number, $size) {
-  display: grid;
-  grid-template-columns: repeat($number, #{$size}fr);
-}
-@mixin background-repeat-size() {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// @mixin display-grid($number, $size) {
+//   display: grid;
+//   grid-template-columns: repeat($number, #{$size}fr);
+// }
+// @mixin background-repeat-size() {
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 @mixin h-style($color: $color-black, $font-size, $font-w: none) {
   color: $color;
   font-size: #{$font-size}rem;
@@ -77,7 +77,6 @@ header {
       }
     }
     & .connection {
-      // @include display-grid(3, 1);
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       width: 70%;
@@ -181,7 +180,8 @@ main {
         rgba(233, 145, 105, 0.496) 0%
       ),
       url("/images/bg_1.jpg");
-    @include background-repeat-size();
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .cantact {
       display: flex;
@@ -215,7 +215,6 @@ main {
     }
   }
   .section-education {
-    // @include display-grid(4, 1);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
@@ -271,7 +270,6 @@ main {
           letter-spacing: 1px;
         }
         > section {
-          // @include display-grid(2, 1);
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           gap: 1.5rem;
@@ -303,7 +301,8 @@ main {
       }
       > :last-child {
         background-image: url("./../images/about.jpg");
-        @include background-repeat-size();
+        background-repeat: no-repeat;
+        background-size: cover;
         background-position: center;
       }
     }
@@ -318,7 +317,8 @@ main {
         rgba(227, 99, 39, 0.604) 0%
       ),
       url(./../images/bg_3.jpg);
-    @include background-repeat-size();
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 
     > div {
@@ -326,7 +326,6 @@ main {
       padding: 2rem 0;
 
       > :first-child {
-        // @include display-grid(2, 1);
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
@@ -334,7 +333,8 @@ main {
 
         .video-university {
           background-image: url("./../images/about-2.jpg");
-          @include background-repeat-size();
+          background-repeat: no-repeat;
+          background-size: cover;
         }
         .fox-university {
           padding: 2rem 0;
@@ -355,7 +355,6 @@ main {
       }
       > :last-child {
         padding: 2rem 0;
-        // @include display-grid(4, 1);
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         column-gap: 3rem;
@@ -396,7 +395,6 @@ main {
       }
     }
     > div:last-child {
-      // @include display-grid(4, 1);
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       padding: 0 1.5rem;
