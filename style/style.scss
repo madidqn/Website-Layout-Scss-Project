@@ -22,15 +22,6 @@ $color-gray: #bab7b7;
   transition: all 0.6s;
   color: $color-orange;
 }
-@mixin background-repeat-size() {
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-// @mixin h-style($color: $color-black, $font-size, $font-w: none) {
-//   color: $color;
-//   font-size: #{$font-size}rem;
-//   font-weight: $font-w;
-// }
 * {
   margin: 0;
   padding: 0;
@@ -176,7 +167,8 @@ main {
         rgba(233, 145, 105, 0.496) 0%
       ),
       url("/images/bg_1.jpg");
-    @include background-repeat-size();
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .cantact {
       display: flex;
@@ -304,7 +296,8 @@ main {
       }
       > :last-child {
         background-image: url("./../images/about.jpg");
-        @include background-repeat-size();
+        background-repeat: no-repeat;
+        background-size: cover;
         background-position: center;
       }
     }
@@ -321,7 +314,8 @@ main {
         rgba(227, 99, 39, 0.604) 0%
       ),
       url(./../images/bg_3.jpg);
-    @include background-repeat-size();
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 
     > div {
@@ -336,7 +330,8 @@ main {
 
         .video-university {
           background-image: url("./../images/about-2.jpg");
-          @include background-repeat-size();
+          background-repeat: no-repeat;
+          background-size: cover;
         }
         .fox-university {
           padding: 2rem 0;
@@ -473,7 +468,8 @@ main {
             width: 100%;
             transition: 0.5s ease all;
             background-position: top center;
-            @include background-repeat-size();
+            background-repeat: no-repeat;
+            background-size: cover;
           }
           .teacher-one {
             background-image: url("./../images/teacher-1.jpg");
